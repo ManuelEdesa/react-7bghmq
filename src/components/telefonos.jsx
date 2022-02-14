@@ -1,11 +1,11 @@
 import React from 'react';
 import uuid from 'react-uuid';
-import { Card, Container, Table, Row, Col } from 'react-bootstrap';
+import { Card, Container, Table, Row, Col,  } from 'react-bootstrap';
 
 
 import './table_component.css';
 
-class bibliografia extends React.Component {
+class telefonos extends React.Component {
   constructor(props) {
     super(props);
     this.state = { selectedItem: '', tableData: [] };
@@ -16,7 +16,7 @@ class bibliografia extends React.Component {
   };
 
   async componentDidMount() {
-    const response = await fetch('https://www.etnassoft.com/api/v1/get/?lang=spanish&category=libros_programacion&results_range=0,05');
+    const response = await fetch('https://api-mobilespecs.azharimm.site/v2/latest');
     const responseData = await response.json();
     this.setState({ tableData: responseData, selectedItem: responseData[0] });
   }
@@ -84,4 +84,4 @@ class bibliografia extends React.Component {
   }
 }
 
-export default bibliografia;
+export default telefonos;

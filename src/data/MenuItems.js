@@ -3,7 +3,7 @@
 import Ejercicio1 from '../components/Ejercicio1';
 import Ejercicio2 from '../components/Ejercicio2';
 import Ejercicio3 from '../components/Ejercicio3';
-import bibliografia from '../components/bibliografia';
+import telefonos from '../components/telefonos';
 import App from '../components/App';
 export const MenuItems = [
 
@@ -28,9 +28,9 @@ export const MenuItems = [
   },
   {
     id: 4,
-    path: '/Bibliografia',
-    title: 'bibliografia',
-    component: bibliografia,
+    path: '/Telefonos',
+    title: 'telefonos',
+    component: telefonos,
   },
   {
     id: 5,
