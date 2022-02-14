@@ -12,7 +12,45 @@ class BootstrapHeader extends React.Component {
 
   render() {
     return (
-      <Navbar bg="light" expand={false}>
+<Navbar bg="light" expand={false}>
+  <Container fluid>
+    <Navbar.Brand bg="light" href="#">Examen Jose Manuel Edesa</Navbar.Brand>
+    <Navbar.Toggle aria-controls="offcanvasNavbar" />
+    <Navbar.Offcanvas
+      id="offcanvasNavbar"
+      aria-labelledby="offcanvasNavbarLabel"
+      placement="end"
+    >
+      <Offcanvas.Header closeButton>
+        <Offcanvas.Title id="offcanvasNavbarLabel">Ejercicios del examen</Offcanvas.Title>
+      </Offcanvas.Header>
+      <Offcanvas.Body>
+        <Nav className="justify-content-end flex-grow-1 pe-3">
+          
+          Mostramos los ejercicios del examen
+              {MenuItems.map((item) => {
+                return (
+                  <Nav.Link as={Link} to={item.path}>
+                    {item.title}
+                  </Nav.Link>
+                );
+              })}
+        </Nav>
+        
+        <Form className="d-flex">
+          <FormControl
+            type="search"
+            placeholder="Search"
+            className="me-2"
+            aria-label="Search"
+          />
+          <Button variant="outline-success">Search</Button>
+        </Form>
+      </Offcanvas.Body>
+    </Navbar.Offcanvas>
+  </Container>
+</Navbar>
+      /*<Navbar bg="light" expand={false}>
       <Container fluid>
         <Navbar.Brand href="#">EXAMEN DI</Navbar.Brand>
         <img
@@ -51,7 +89,7 @@ class BootstrapHeader extends React.Component {
           </Offcanvas.Body>
         </Navbar.Offcanvas>
       </Container>
-    </Navbar>
+    </Navbar>*/
       
     );
   }
