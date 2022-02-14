@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import Header from './components/Header';
 import BootstrapHeader from './components/BootstrapHeader';
-import { MenuItems } from './data/MenuItems';
+import { MenuItems } from './data/PaginasApp';
 
 export function App() {
   return (

@@ -2,7 +2,7 @@ import React from 'react';
 import { Navbar, Container, Nav,Offcanvas ,NavDropdown,Form,FormControl,Button} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 //importa el menu item con sus elementos para incluirlos mas abajo en el render
-import { MenuItems } from '../data/MenuItems';
+import { MenuItems } from '../data/PaginasApp';
 import './header.css';
 
 class BootstrapHeader extends React.Component {
@@ -14,10 +14,10 @@ class BootstrapHeader extends React.Component {
     return (
 <Navbar bg="light" expand={false}>
   <Container fluid>
-    <Navbar.Brand bg="light" href="#">Examen Jose Manuel Edesa</Navbar.Brand>
+    <Navbar.Brand bg="light" href="#">Menu</Navbar.Brand>
             <img
               className="logo-image"
-              src="https://eu01.edcwb.com/buscador/img/centros/logogrande/7348-a9c730d6b2b644f5b9910364ba6af277.jpg"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/1200px-React.svg.png"
             />
             <i className="fas fa-user-graduate" />
     <Navbar.Toggle aria-controls="offcanvasNavbar" />

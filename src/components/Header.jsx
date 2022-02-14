@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { MenuItems } from '../data/MenuItems';
+import { MenuItems } from '../data/PaginasApp';
 
 import './header.css';
 //esta clase crea la barra superior de la pagina
