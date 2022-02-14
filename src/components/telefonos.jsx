@@ -16,7 +16,7 @@ class telefonos extends React.Component {
   };
 
   async componentDidMount() {
-    const response = await fetch('https://api-mobilespecs.azharimm.site/v2/latest');
+    const response = await fetch('');
     const responseData = await response.json();
     this.setState({ tableData: responseData, selectedItem: responseData[0] });
   }
